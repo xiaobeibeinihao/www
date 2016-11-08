@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use Yii;
 use yii\base\InvalidParamException;
+use yii\rest\ActiveController;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -16,7 +17,7 @@ use frontend\models\ContactForm;
 /**
  * Site controller
  */
-class UserController extends Controller
+class UserController extends ActiveController
 {
     public $modelClass = 'frontend\models\User';
 }
