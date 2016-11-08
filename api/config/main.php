@@ -59,7 +59,7 @@ return [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => 'smallLoans',
                     'extraPatterns' => [
-                        'GET index' => 'index',
+                        'GET loanindex' => 'loanindex',
                     ],
                 ],
             ],
