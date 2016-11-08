@@ -5,7 +5,7 @@ $params = array_merge(
     require(__DIR__ . '/params.php'),
     require(__DIR__ . '/params-local.php')
 );
-
+    echo "dddd";
 return [
     'id' => 'app-backend',
     //'id' => 'app-api',
