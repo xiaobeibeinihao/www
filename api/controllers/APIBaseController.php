@@ -41,12 +41,11 @@ class APIBaseController extends ActiveController
         );
         //$crypt = new R360appCrypt($this->ukey);
        // $data = $crypt->encode($secLevel,$arr);
-        if(Config::$devMode)
+        if(YII_DEBUG)
         {
-            Yii::log("app_response_data:". json_encode($arr));
+            \Yii::getLogger()->log("app_response_data:",json_encode($arr));
         }
         echo $data;
-        $this->log($status,$msg);
-        Yii::app()->end();
+        \Yii::$app->end();
     }
 }

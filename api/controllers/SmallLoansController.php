@@ -12,7 +12,7 @@ namespace backend\controllers;
 class SmallLoansController extends APIBaseController
 {
 
-    public function actionIndex()
+    public function actionLoanindex()
     {
         header('Content-Type: application/json; charset=utf-8');
         $platform = \Yii::$app->request->getParam('platform');
@@ -20,14 +20,12 @@ class SmallLoansController extends APIBaseController
         $intPageSize = intval(\Yii::$app->request->getParam('page_size',20));
         $intPageNum = $intPageNum>1 ? $intPageNum : 1;
 
-        $echoStr = $_GET["echostr"];
-        $signature = $_GET["signature"];
-        $timestamp = $_GET["timestamp"];
-        $nonce = $_GET["nonce"];
+        $result['key'] = 'ss';
+        $this->apiResponse($result);
         //valid signature , option
-        if($this->checkSignature($signature,$timestamp,$nonce)){
-            echo $echoStr;
-        }
+        //if($this->checkSignature($signature,$timestamp,$nonce)){
+        //    echo $echoStr;
+       // }
     }
 
     /**
