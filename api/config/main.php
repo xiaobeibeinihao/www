@@ -50,7 +50,7 @@ return [
             ],
         ],
         */
-        'urlManager' => [
+        /*'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing' => true,
             'showScriptName' => false,
@@ -63,7 +63,7 @@ return [
                     ],
                 ],
             ],
-        ],
+        ],*/
     ],
     'params' => $params,
 ];
