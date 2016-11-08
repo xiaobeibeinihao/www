@@ -7,10 +7,10 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-backend',
-    //'id' => 'app-api',
+    //'id' => 'app-backend',
+    'id' => 'app-api',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'backend\controllers',
+    'controllerNamespace' => 'api\controllers',
     //'controllerNamespace' => 'api\controllers',
     'bootstrap' => ['log'],
     'modules' => [],

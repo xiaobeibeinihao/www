@@ -6,7 +6,7 @@
  * Time: 11:50
  */
 
-namespace backend\controllers;
+namespace api\controllers;
 
 class SmallLoansController extends APIBaseController
 {
