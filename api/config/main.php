@@ -5,7 +5,7 @@ $params = array_merge(
     require(__DIR__ . '/params.php'),
     require(__DIR__ . '/params-local.php')
 );
-    echo "dddd";
+
 return [
     'id' => 'app-backend',
     //'id' => 'app-api',
@@ -57,7 +57,7 @@ return [
             'rules' => [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
             ],
-        ]
+        ],
         /*'urlManager' => [
             'enablePrettyUrl' => true,
             'enableStrictParsing' => true,
